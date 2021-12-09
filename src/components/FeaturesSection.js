@@ -10,11 +10,13 @@ const useStyles = makeStyles((theme) => ({
     background: 'black',
     minHeight: '100vh',
     height: 'auto',
-    border: '1px solid #262626',
     padding: ' 60px calc((100vw - 1210px) / 2)',
 
     '@media (max-width: 1075px)': {
-      padding: '20px 24px !important',
+      padding: '20px 24px',
+    },
+    '@media (max-width: 380px)': {
+      marginTop: '30px',
     },
   },
   root_upper: {

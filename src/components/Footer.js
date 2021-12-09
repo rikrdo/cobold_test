@@ -29,12 +29,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     borderTop: '1px solid #353535',
     background: 'black',
-    padding: ' 40px calc((100vw - 1250px) / 2) !important',
+    padding: ' 40px calc((100vw - 1250px) / 2)',
     display: 'flex',
     color: '#F9F9F9',
     justifyContent: 'space-between',
     '@media (max-width: 1075px)': {
-      padding: '40px 24px !important',
+      padding: '40px 24px',
     },
     '@media (max-width: 900px)': {
       flexDirection: 'column',
@@ -46,7 +46,11 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     textDecoration: 'none',
   },
-  footer_links: {},
+  footer_links: {
+    '@media (max-width: 900px)': {
+      margin: '25px 0',
+    },
+  },
   footer_link: {
     cursor: 'pointer',
     color: 'inherit',
